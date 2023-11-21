@@ -1,0 +1,22 @@
+/* Tùy chỉnh giao diện video player và controls tại đây */
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.video-controls button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.video-controls input {
+  margin: 0 8px;
+}

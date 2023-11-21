@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import VideoPlayer from "./VideoPlayer";
 
-function App() {
+const App = () => {
+  const videoSource = "your_video_source_url";
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Video Player</h1>
       </header>
+      <main className="container mx-auto mt-4">
+        <VideoPlayer source={videoSource} />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
